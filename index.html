@@ -1,13 +1,90 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Knockout Quiz</title><style>
-:root{--bg:#0d0f29;--bg2:#21124a;--fg:#f4f2ff;--muted:#b9b4d6;--accent:#ffd400;--pink:#ff2e88;--card:rgba(255,255,255,.06)}
-*{box-sizing:border-box}html{background:var(--bg)}
-body{margin:0;min-height:100vh;background:linear-gradient(180deg,var(--bg),var(--bg2));color:var(--fg);
-font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:48px 16px 64px}
-h1{font-size:30px;line-height:1.2;color:var(--accent);margin:0 0 4px;text-shadow:3px 3px 0 var(--pink)}
-h2{font-size:20px;margin:32px 0 8px}p,li{color:var(--muted)}a{color:var(--accent)}
-.card{background:var(--card);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:16px 20px;margin-top:24px}
-.small{font-size:14px}
-</style></head><body><main><h1>Knockout Quiz</h1><p class="small">The party trivia game where the last player standing wins.</p>
-<div class="card"><p><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></p></div></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Knockout Quiz – Party Trivia for iPhone and iPad</title>
+  <meta name="description" content="The party trivia game where the last player standing wins. One phone, one quizmaster, everyone shouts. Over 10,000 questions, completely offline.">
+  <meta property="og:title" content="Knockout Quiz">
+  <meta property="og:description" content="The party trivia game where the last player standing wins.">
+  <meta property="og:image" content="https://mesic.github.io/knockoutquiz/assets/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0d0f29">
+  <link rel="icon" type="image/png" href="assets/icon-256.png">
+  <link rel="apple-touch-icon" href="assets/icon-256.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="./"><img src="assets/icon-256.png" alt=""><span>Knockout Quiz</span></a>
+    <div class="nav-links">
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="./#get">App Store</a>
+    </div>
+  </nav>
+
+  <main class="wrap">
+    <section class="hero">
+      <img class="icon" src="assets/icon.png" alt="Knockout Quiz app icon" width="148" height="148">
+      <h1>KNOCKOUT<br>QUIZ</h1>
+      <p class="tagline">Last player standing wins.</p>
+      <p class="lead">
+        One phone, one quizmaster, everyone shouts. Two right answers and you're through;
+        the last one left each round is knocked out. A party trivia game for friends, family and game night.
+      </p>
+      <span class="badge" id="get">Coming soon to the App Store</span>
+      <ul class="chips"><li>iPhone &amp; iPad</li><li>10,000+ questions</li><li>Fully offline</li><li>3 free games</li></ul>
+    </section>
+
+    <section class="usecase">
+      <div class="bars" aria-hidden="true">
+        <span style="color:var(--yellow)">P1</span><span class="bar p1"><i></i></span>
+        <span style="color:var(--pink)">VS</span>
+        <span class="bar p2"><i></i></span><span style="color:var(--pink)">P2</span>
+      </div>
+      <div class="phone">
+        <video src="assets/preview.mp4" poster="assets/preview-poster.jpg" autoplay muted loop playsinline
+               aria-label="Knockout Quiz playing a round: questions, a tie-breaker, a knockout and the winner"></video>
+      </div>
+      <h2>No buzzers. No extra devices. Just shouting.</h2>
+      <p>The quizmaster reads the questions from one iPhone or iPad and taps who got it right.
+         Everyone else plays out loud, wherever you are.</p>
+      <div class="steps">
+        <div class="step"><b>1</b><div><h3>Read it out</h3><p>The quizmaster reads each question aloud.</p></div></div>
+        <div class="step"><b>2</b><div><h3>Shout the answer</h3><p>First right answer gets the point. Tap ✓ or ✗.</p></div></div>
+        <div class="step"><b>3</b><div><h3>Two and you're safe</h3><p>Two correct answers qualify you for the next round.</p></div></div>
+        <div class="step"><b>4</b><div><h3>Last one out</h3><p>The last player without two is knocked out, until one champion remains.</p></div></div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <figure><img src="assets/shot-1-home.jpg" width="1100" height="2392" alt="Home screen with the arcade-style Knockout Quiz logo" loading="lazy"><figcaption>Insert friends</figcaption></figure>
+      <figure><img src="assets/shot-2-dashboard.jpg" width="1100" height="2392" alt="A question in play, with tick and cross buttons for each player" loading="lazy"><figcaption>Shout it out</figcaption></figure>
+      <figure><img src="assets/shot-3-tiebreaker.jpg" width="1100" height="2392" alt="A numbers tie-breaker question" loading="lazy"><figcaption>Closest guess wins</figcaption></figure>
+      <figure><img src="assets/shot-4-winner.jpg" width="1100" height="2392" alt="Winner screen with confetti and final standings" loading="lazy"><figcaption>Last one standing</figcaption></figure>
+    </section>
+
+    <section class="features">
+      <div class="feature"><h3>10,000+ questions</h3><p>Geography, history, science, language, film, sport and more, from warm-up to expert.</p></div>
+      <div class="feature"><h3>Tie-breakers</h3><p>Too close to call? Everyone guesses a number and the closest wins.</p></div>
+      <div class="feature"><h3>Private</h3><p>No account, no internet, no ads and no tracking. Everything stays on your device.</p></div>
+    </section>
+
+    <section class="price">
+      <p class="free">3 GAMES FREE</p>
+      <p>Play your first three games with every feature included, then unlock the full game with one purchase.
+         No subscription, no ads. Many questions are built from <a href="https://www.wikidata.org/">Wikidata</a>.</p>
+      <span class="badge">Coming soon to the App Store</span>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Almir Mesic</span>
+    <span><a href="support.html">Support</a> · <a href="privacy.html">Privacy Policy</a></span>
+  </footer>
+</body>
+</html>
