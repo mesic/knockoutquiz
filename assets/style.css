@@ -88,6 +88,14 @@ a.badge:hover { text-decoration: none; filter: brightness(1.06); }
 .step h3 { margin: 0 0 4px; font-size: 16px; }
 .step p { margin: 0; color: var(--muted); font-size: 15px; }
 
+.trailer { text-align: center; margin: 64px 0 0; }
+.trailer .section-title { margin-bottom: 20px; }
+.screen {
+  padding: 8px; border-radius: 18px; background: #05050f;
+  box-shadow: 0 0 0 2px var(--line), 6px 6px 0 var(--pink), 0 30px 80px rgba(0, 0, 0, 0.5);
+}
+.screen video { width: 100%; aspect-ratio: 16 / 9; border-radius: 12px; background: var(--bg); }
+
 .gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 56px 0 44px; }
 .gallery figure { margin: 0; }
 .gallery img { width: 100%; border-radius: 18px; border: 5px solid #05050f; box-shadow: 0 0 0 1px var(--line); }
